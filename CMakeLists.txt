@@ -15,7 +15,6 @@ find_package(CUDAToolkit REQUIRED)
 # Create executable
 add_executable(${PROJECT_NAME} src/main.cu)
 
-# Set CUDA architectures
 set_target_properties(${PROJECT_NAME} PROPERTIES
     CUDA_SEPARABLE_COMPILATION ON
 )
